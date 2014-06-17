@@ -33,4 +33,7 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  #RRT list7.11 Bcryptセキュリティレベルの緩和（テスト用）
+  ActiveModel::SecurePassword.min_cost = true
 end
